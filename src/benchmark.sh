@@ -33,5 +33,5 @@ python3 "$FAISS_FILE" --input-vec "$WIKIDATA_FILE" --data-dir "$DATA_DIR"
 CWD_TO_PRESERVE=$(pwd)
 cd "$ROOT_DIR"
 cargo build --release
-./target/release/ann "$DATA_DIR" "$WIKIDATA_FILE"
+./target/release/vec-base "$DATA_DIR" "$WIKIDATA_FILE"
 cd "$CWD_TO_PRESERVE"
